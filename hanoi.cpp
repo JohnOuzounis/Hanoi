@@ -7,7 +7,7 @@ using namespace std;
 
 void hanoi(int n, int start, int end )
 {
-    if(n <= 0 || (start >3 || start < 1) || (end > 3 || end < 1))   return;
+    if(n <= 0 || (start >3 || start < 1) || (end > 3 || end < 1) || start == end)   return;
 
     if(n == 1){
         cout << start << "->" << end << endl;
